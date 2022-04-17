@@ -1,26 +1,33 @@
-import React, { useEffect } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { async } from '@firebase/util';
+import React, { useEffect, useState } from 'react';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import GoogleSignIn from '../GoogleSignIn/GoogleSignIn.js'
 const Login = () => {
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+    const [email,setEmail] = useState('')
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || "/";
     const handleSignIn = e => {
         e.preventDefault()
-        const email = e.target.email.value
+        setEmail(e.target.email.value)
         const password = e.target.password.value
         signInWithEmailAndPassword(email, password)
     }
- 
+
     useEffect(() => {
         if (user) {
             navigate(from, { replace: true });
         }
     }, [user])
 
+    const resetPassword = async ()=>{
+        await(sendPasswordResetEmail(email))
+        alert('sent mail')
+    }
     return (
         <div className='w-1/2 mx-auto my-20 bg-rose-200 p-9 shadow-xl rounded-lg '>
             <form onSubmit={handleSignIn}>
@@ -42,6 +49,7 @@ const Login = () => {
                 </label>
             </form>
             <p className='text-center'>New to Pregnancy Care? <Link className='text-blue-700 cursor-pointer' to='/signup'>Register</Link></p>
+            <p className='text-center'>Forgot Password? <span onClick={resetPassword} className='text-blue-700 cursor-pointer' >Reset Password</span></p>
             <GoogleSignIn></GoogleSignIn>
         </div>
     );
