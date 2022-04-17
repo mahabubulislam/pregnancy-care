@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
-import { getAuth, signInWithEmailAndPassword, signOut } from 'firebase/auth';
-import { useAuthState, useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import {  useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 
 const Signup = () => {
