@@ -1,6 +1,6 @@
 # Project Name: Pregnancy Care
 ### Live website: [Pregnancy Care](https://pregnancy-care-77a79.web.app/)
-# Link:[https://trust-reviews.netlify.app/](https://pregnancy-care-77a79.web.app/)
+# Link:[https://pregnancy-care-77a79.web.app/](https://pregnancy-care-77a79.web.app/)
 # Project Description:
 * I used React, React Router, Tailwind CSS, Tailwind element for carousel Firebase, Toastify to create this project.
 * This is a doctors website. It has Home, Appoinment, Blogs, About, SignIn, Login page.
