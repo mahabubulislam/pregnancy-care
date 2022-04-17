@@ -7,7 +7,7 @@ const CustomLink = ({ to, ...props }) => {
     return (
         <div>
             <Link
-                className={`md:ml-8 text-xl md:my-0 my-7 py-3 underline-offset-4 ${match? 'underline': 'none'} ${match? 'text-rose-400':'text-black'}`}
+                className={`md:ml-8 text-xl md:my-0 my-7 py-3 underline-offset-4 ${match? 'underline': 'none'} ${match? 'text-rose-500':'text-black'}`}
                 to={to}
                 {...props}
             >
