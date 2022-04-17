@@ -8,7 +8,7 @@ const ServiceDetail = (props) => {
     const navigate = useNavigate()
     return (
 
-        <div className='p-5 flex  items-center'>
+        <div className='p-5 flex  items-center shadow-md shadow-slate-300 hover:shadow-2xl hover:scale-100 ease-in duration-300'>
             <div>
                 <h1 className='text-3xl text-rose-500 py-3'>{name}</h1>
                 <p className='py-3'>{description}</p>
