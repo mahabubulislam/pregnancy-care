@@ -4,6 +4,9 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import GoogleSignIn from '../GoogleSignIn/GoogleSignIn.js'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Login = () => {
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
@@ -26,7 +29,12 @@ const Login = () => {
 
     const resetPassword = async ()=>{
         await(sendPasswordResetEmail(email))
-        alert('sent mail')
+        if(email){
+            toast('Password reset mail sent')
+        }
+        else{
+            toast('Enter email firts')
+        }
     }
     return (
         <div className='w-1/2 mx-auto my-20 bg-rose-200 p-9 shadow-xl rounded-lg '>
@@ -51,6 +59,7 @@ const Login = () => {
             <p className='text-center'>New to Pregnancy Care? <Link className='text-blue-700 cursor-pointer' to='/signup'>Register</Link></p>
             <p className='text-center'>Forgot Password? <span onClick={resetPassword} className='text-blue-700 cursor-pointer' >Reset Password</span></p>
             <GoogleSignIn></GoogleSignIn>
+            <ToastContainer />
         </div>
     );
 };

@@ -5,7 +5,7 @@ import auth from '../../firebase.init';
 
 const Signup = () => {
    
-    const [ createUserWithEmailAndPassword,user, loading, error, ] = useCreateUserWithEmailAndPassword(auth,{option:'sendEmailVerification'});
+    const [ createUserWithEmailAndPassword,user, loading, error, ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
     const navigate = useNavigate()
     const handleRegister = e =>{
         e.preventDefault()
@@ -18,6 +18,7 @@ const Signup = () => {
         }
         alert("Password don't match")
     }
+    
 
     return (
         <div className='w-1/2 mx-auto my-20 bg-rose-200 p-9 shadow-xl rounded-lg '>
