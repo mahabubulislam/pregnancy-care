@@ -14,6 +14,7 @@ const Login = () => {
         const password = e.target.password.value
         signInWithEmailAndPassword(email, password)
     }
+ 
     useEffect(() => {
         if (user) {
             navigate(from, { replace: true });
