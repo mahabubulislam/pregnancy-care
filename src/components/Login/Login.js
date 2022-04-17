@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import GoogleSignIn from '../GoogleSignIn/GoogleSignIn.js'
 const Login = () => {
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
     const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || "/";
     const handleSignIn = e => {
         e.preventDefault()
         const email = e.target.email.value
@@ -14,7 +16,7 @@ const Login = () => {
     }
     useEffect(() => {
         if (user) {
-            navigate('/')
+            navigate(from, { replace: true });
         }
     }, [user])
 
