@@ -80,6 +80,7 @@ const Signup = () => {
                 </label>
             </form>
             <p className='text-center'>Already have an account? <Link className='text-blue-700 cursor-pointer' to='/login'>Login</Link></p>
+            
         </div>
     );
 };

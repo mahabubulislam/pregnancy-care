@@ -39,11 +39,6 @@ const Login = () => {
                 </label>
             </form>
             <p className='text-center'>New to Pregnancy Care? <Link className='text-blue-700 cursor-pointer' to='/signup'>Register</Link></p>
-            <div className='flex justify-center'>
-                <div className='w-40 h-32 bg-rose-500'></div>
-                <p>or</p>
-                <div className='w-5 h-1 bg-rose-500'></div>
-            </div>
             <GoogleSignIn></GoogleSignIn>
         </div>
     );

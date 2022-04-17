@@ -1,0 +1,14 @@
+.border-line{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 415px;
+    width: 50%;
+    margin: 0 auto;
+}
+.line{
+    height: 2px;
+    width: 150px;
+    margin: 10px 20px;
+    background-color: #f43f5e;
+}
