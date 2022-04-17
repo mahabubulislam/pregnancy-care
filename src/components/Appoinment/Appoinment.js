@@ -4,7 +4,7 @@ const Appoinment = () => {
     return (
         <div className='flex justify-between bg-blue-100'>
             <div className='text-center w-1/2 mx-auto'>
-                <h1 className='text-4xl m-4 p-2 text-pink-500'>Fix an Appoinment</h1>
+                <h1 className='text-4xl m-4 p-2 text-rose-400'>Fix an Appoinment</h1>
                 <form className='mb-5'>
                     <input className='bg-white rounded-full p-4 my-2 w-1/2 focus:outline-none' type="text" required placeholder='Name' />
                     <br />
@@ -27,7 +27,7 @@ const Appoinment = () => {
                     <input className='bg-white rounded-full p-4 my-2 mx-7 focus:outline-none' type="time" name="time" id="time" min="09:00" max="18:00" required  />
                     <input className='bg-white rounded-full p-4 my-2 mx-7 focus:outline-none' type="time" name="time" id="time" min="09:00" max="18:00" required  />
                     <br />
-                    <input className='bg-pink-500/80 hover:bg-emerald-400 text-white rounded-full p-4 my-2 w-1/2 focus:outline-none'  type="submit" value="Check Avaibility" />
+                    <input className='bg-rose-400 hover:bg-emerald-400 text-white rounded-full p-4 my-2 w-1/2 focus:outline-none'  type="submit" value="Check Avaibility" />
                 </form>
             </div>
             <img className='w-2/4' src="https://i.ibb.co/Wn0CZwX/doctor-1.png" alt="" />
