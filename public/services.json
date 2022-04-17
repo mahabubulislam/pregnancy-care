@@ -1,44 +1,44 @@
 [
     {
       "id": 1,
-      "name": "Alana Rosario",
-      "userImg": "http://placehold.it/32x32",
-      "description": "Aliqua duis sit velit elit minim laborum reprehenderit elit. Irure proident sunt id esse tempor nostrud Lorem elit veniam occaecat ad ullamco ipsum. Sit fugiat elit officia adipisicing cillum id elit cupidatat exercitation do pariatur duis esse Lorem.\r\n",
-      "price": 3.3914
+      "name": "Getting Pregnant",
+      "img": "https://i.ibb.co/GcS3Yy5/service.png",
+      "description": "You’re more likely to get pregnant around the time you are ovulating. This is when an egg becomes ready and you are at your most fertile.",
+      "price": 500
     },
     {
       "id": 2,
-      "name": "Cervantes Abbott",
-      "userImg": "http://placehold.it/32x32",
-      "description": "Occaecat exercitation dolor ea sit voluptate consequat sint ea incididunt commodo et reprehenderit. Ea ad nostrud sunt qui ut qui fugiat sit officia sunt proident eiusmod quis ad. Est enim sint amet dolor ad. Enim excepteur occaecat incididunt elit sit laborum nulla magna velit fugiat magna occaecat qui adipisicing. Id excepteur fugiat aliquip ad tempor excepteur veniam reprehenderit officia est qui. Cupidatat est incididunt voluptate minim.\r\n",
-      "price": 4.231
+      "name": "Baby Birth",
+      "img": "https://i.ibb.co/5xXMHvX/service-1.png",
+      "description": "Giving birth will be different for every woman, but the main signs that you are starting labour will most likely be strong, regular contractions",
+      "price": 700
     },
     {
       "id": 3,
-      "name": "Imogene Wall",
-      "userImg": "http://placehold.it/32x32",
-      "description": "Voluptate et tempor velit aute proident dolor aute. Anim magna sit quis cillum quis fugiat eu. Proident non Lorem veniam incididunt voluptate quis cillum reprehenderit officia irure do.\r\n",
-      "price": 4.7721
+      "name": "Your first scan",
+      "img": "https://i.ibb.co/RCYsPjS/service-2.png",
+      "description": "Your first ultrasound is called the “dating” or “viability” ultrasound. It's typically done between 7 and 8 weeks to verify your due date, to look for a fetal heartbeat, and to measure the length of the baby from “crown to rump.",
+      "price": 3000
     },
     {
       "id": 4,
-      "name": "Nixon Stokes",
-      "userImg": "http://placehold.it/32x32",
-      "description": "Quis quis nulla mollit nisi do non. Id nulla irure reprehenderit culpa pariatur ad in do anim minim. Velit ad magna velit id anim irure mollit. Consectetur esse anim eu laborum.\r\n",
-      "price": 4.2882
+      "name": "Baby Care",
+      "img": "https://i.ibb.co/1KSTv83/service-3.png",
+      "description": "Get information on basic baby care, baths, burping, gas, jaundice, pediatricians, medicine, shaken baby syndrome and more from the editors of Parents magazine.",
+      "price": 900
     },
     {
       "id": 5,
-      "name": "Butler Miller",
-      "userImg": "http://placehold.it/32x32",
-      "description": "Dolore officia tempor consectetur incididunt duis tempor. Ex cillum veniam fugiat nisi ea incididunt. Mollit consequat officia cillum eu in aliqua do. Occaecat Lorem voluptate commodo voluptate amet. Commodo laborum voluptate eiusmod et adipisicing. Elit ullamco amet irure duis amet do veniam nostrud eu consectetur ea deserunt culpa esse. Veniam cillum non qui reprehenderit reprehenderit exercitation laboris incididunt do.\r\n",
-      "price": 4.8568
+      "name": "Pregnancy",
+      "img": "https://i.ibb.co/g3Fys5w/service-4.png",
+      "description": "Common discomforts during pregnancy, Nutrion, Diet, Excercise and many more tips for pregnancy.",
+      "price": 1000
     },
     {
       "id": 6,
-      "name": "Dorsey Richmond",
-      "userImg": "http://placehold.it/32x32",
-      "description": "Do labore qui eu irure eiusmod aliqua consectetur. Et officia cupidatat laborum proident minim voluptate excepteur mollit ea mollit. Mollit sunt minim aliquip mollit enim nisi cupidatat anim cupidatat esse ipsum proident consectetur. Ut Lorem cillum dolore exercitation occaecat esse veniam. Sint elit fugiat consectetur sit sit reprehenderit quis ipsum officia non voluptate id reprehenderit. Dolor ullamco aliquip tempor quis consectetur ut veniam commodo sunt non ipsum.\r\n",
-      "price": 4.1886
+      "name": "Feeding Baby",
+      "img": "https://i.ibb.co/8DGJVhJ/service-5.png",
+      "description": "Babies know when they are hungry or full. Feed your baby every time he or she is hungry. Breast-fed infants should breastfeed eight to12 times a day, approximately 10 to 15 minutes per breast at each feed.",
+      "price": 600
     }
   ]
