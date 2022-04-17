@@ -1,5 +1,5 @@
 import React from 'react';
-import './Appoinment.css'
+
 const Appoinment = () => {
     return (
         <div className='flex justify-between bg-blue-100'>
