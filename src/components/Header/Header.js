@@ -15,10 +15,10 @@ const Header = () => {
 
         <nav className='shadow-md w-full sticky top-0 left-0 z-[900]'>
             <div className='md:flex items-center justify-between bg-white py-4 md:px-10 px-7'>
-                <div className='font-bold text-2lg cursor-pointer flex items-center text-gray-800'>
+                <div className='font-bold text-2xl cursor-pointer flex items-center text-gray-800'>
                     <div className='flex items-center'>
                         <img className='w-32' src={logo} alt="" />
-                        <h1 className='m-0 text-3lg text-rose-500'>PREGNANCY CARE</h1>
+                        <h1 className='m-0 text-3xl text-rose-500'>PREGNANCY CARE</h1>
                     </div>
                 </div>
                 <div onClick={() => setOpen(!open)} className='w-6 h-6 text-3lg absolute right-8 top-6 cursor-pointer lg:hidden'>
