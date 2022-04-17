@@ -16,15 +16,15 @@ const Header = () => {
                         <h1 className='m-0 text-3xl text-rose-400'>PREGNANCY CARE</h1>
                     </div>
                 </div>
-                <div onClick={() => setOpen(!open)} className='w-6 h-6 text-3xl absolute right-8 top-6 cursor-pointer lg:hidden'>
+                <div onClick={() => setOpen(!open)} className='w-6 h-6 text-3xl absolute right-8 top-6 cursor-pointer xl:hidden'>
                     {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
                 </div>
-                <ul className={`lg:flex lg:items-center lg:pb-0 pb-12 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto mt-5 lg:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
+                <ul className={`xl:flex xl:items-center xl:pb-0 pb-12 absolute xl:static bg-white xl:z-auto z-[-1] left-0 w-full xl:w-auto mt-5 xl:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
                     <CustomLink to='/home'>Home</CustomLink>
                     <CustomLink to='/procedures'>Procedures</CustomLink>
                     <CustomLink to='/appoinment'>Appoinment</CustomLink>
                     <CustomLink to='/blogs'>Blogs</CustomLink>
-                    <CustomLink to='/login'>Login</CustomLink>
+                    <CustomLink to='/login'>Login / Register</CustomLink>
                 </ul>
             </div>
         </nav>
